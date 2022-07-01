@@ -2,22 +2,22 @@
 Setting up 
 
 
---- USER ---
+    USER 
 
 1- php artisan tinker
-    User::create(['name'=>'...', 'email'=>'...', 'password'=>Hash::make('...')])
+    User::create(['name'=>'...', 'email'=>'...', 'password'=>Hash::make('...')]);
 2- php artisan passport:install
 
---- TOKEN ---
+    TOKEN 
 
 POST request to <url>/oauth/token
 
 Body parameters :
     grant_type      password
-    client_id       <taken from passport>
-    client_secret   <taken from passport>
-    username        <given email when creating User>
-    password        <given password when creating User>
+    client_id       -taken from passport-
+    client_secret   -taken from passport-
+    username        -given email when creating User-
+    password        -given password when creating User-
     scope
     
     
